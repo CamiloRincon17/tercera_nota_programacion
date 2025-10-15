@@ -1,10 +1,10 @@
 package Ejercicios.Ejercicio4;
 
 public class Product {
-    public int code;
+    public String code;
     public String name;
     public double price;
-    public Product(int code, String name, double price){
+    public Product(String code, String name, double price){
         this.code = code;
         this.name = name;
         this.price = price;
@@ -12,10 +12,10 @@ public class Product {
     public void showInfo(){
         System.out.println("Code: " + code + " | Name: " + name + " | Price: " + price);
     }
-    public int getCode() {
+    public String getCode() {
         return code;
     }
-    public void setCode(int code) {
+    public void setCode(String code) {
         this.code = code;
     }
     public String getName() {

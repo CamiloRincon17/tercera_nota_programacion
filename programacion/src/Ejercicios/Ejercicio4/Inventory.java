@@ -1,22 +1,59 @@
 package Ejercicios.Ejercicio4;
+
 import java.util.ArrayList;
 import java.util.HashMap;
+
 public class Inventory {
-    public static void main(String[] args) {
-        ArrayList<Product> products = new ArrayList<>();
-        products.add(new Product(1, "Product 1", 100.0));
-        products.add(new Product(2, "Product 2", 200.0));
-        products.add(new Product(3, "Product 3", 300.0));
-        for(Product product : products){
+    private ArrayList<Product> products;
+    private HashMap<String, Product> catalog;
+
+    public Inventory() {
+        this.products = new ArrayList<>();
+        this.catalog = new HashMap<>();
+    }
+
+    public void addProduct(Product product) {
+        products.add(product);
+        catalog.put(product.getCode(), product);
+    }
+
+    public boolean removeProduct(String code) {
+        Product product = catalog.get(code);
+        if (product != null) {
+            return products.remove(product) && catalog.remove(code) != null;
+        }
+        return false;
+    }
+
+    public void updateProduct(Product updatedProduct) {
+        // Primero, obtenemos el producto antiguo usando el código del producto actualizado.
+        Product oldProduct = catalog.get(updatedProduct.getCode());
+
+        // Si el producto antiguo existe, significa que el código es válido y está en nuestro inventario.
+        if (oldProduct != null) {
+            // Reemplazamos el producto antiguo en el HashMap.
+            catalog.put(updatedProduct.getCode(), updatedProduct);
+
+            // Reemplazamos el producto antiguo en el ArrayList.
+            // indexOf es O(n), pero es una operación necesaria para mantener la consistencia.
+            int index = products.indexOf(oldProduct);
+            products.set(index, updatedProduct);
+        }
+    }
+
+    public Product getProduct(String code) {
+        return catalog.get(code);
+    }
+
+    public void showProducts() {
+        for (Product product : products) {
             product.showInfo();
         }
-        HashMap<String, Product> catalog = new HashMap<>();
-        catalog.put("1", products.get(0));
-        catalog.put("2", products.get(1));
-        catalog.put("3", products.get(2));
-        for(String key : catalog.keySet()){
+    }
+
+    public void showCatalog() {
+        for (String key : catalog.keySet()) {
             catalog.get(key).showInfo();
         }
-        
     }
 }
