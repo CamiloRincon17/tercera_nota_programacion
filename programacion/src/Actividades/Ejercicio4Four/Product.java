@@ -1,4 +1,4 @@
-package Ejercicios.Ejercicio4;
+package Actividades.Ejercicio4Four;
 
 public class Product {
     public String code;

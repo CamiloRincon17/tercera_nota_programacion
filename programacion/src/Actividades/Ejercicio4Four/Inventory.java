@@ -1,4 +1,4 @@
-package Ejercicios.Ejercicio4;
+package Actividades.Ejercicio4Four;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -42,7 +42,12 @@ public class Inventory {
     }
 
     public Product getProduct(String code) {
-        return catalog.get(code);
+        Product product = catalog.get(code);
+        if (product == null) {
+            // Lanzamos una excepción si el producto no se encuentra.
+            throw new NullPointerException("No se encontró ningún producto con el código: " + code);
+        }
+        return product;
     }
 
     public void showProducts() {

@@ -1,4 +1,4 @@
-package Ejercicios.Ejercicio4;
+package Actividades.Ejercicio4Four;
 
 public class Main {
     public static void main(String[] args) {
@@ -8,7 +8,6 @@ public class Main {
         Inventory inventory = new Inventory();
 
         // 2. Agregar productos usando el método de Inventory
-        // Nota: El código del producto es un String, como se define en la clase Product.
         System.out.println("\n--- Agregando productos al inventario ---");
         inventory.addProduct(new Product("P001", "Laptop Gamer", 1200.50));
         inventory.addProduct(new Product("P002", "Mouse Inalámbrico", 25.00));
@@ -37,11 +36,21 @@ public class Main {
         inventory.showProducts();
 
         // 4. Obtener y mostrar un producto específico por su código
-        System.out.println("\n--- Buscando producto con código 'P002' ---");
-        Product foundProduct = inventory.getProduct("P020");
-        if (foundProduct != null) {
+        System.out.println("\n--- Buscando producto con código 'P020' ---");
+        try {
+            Product foundProduct = inventory.getProduct("P020");
             System.out.print("Producto encontrado: ");
             foundProduct.showInfo();
+        } catch (NullPointerException e) {
+            System.out.println(e.getMessage());
+        }
+
+        // Ejemplo con un código que no existe para probar el catch
+        System.out.println("\n--- Buscando producto con código 'P999' (no existe) ---");
+        try {
+            inventory.getProduct("P999");
+        } catch (NullPointerException e) {
+            System.out.println("Error capturado: " + e.getMessage());
         }
 
         // 5. Actualizar un producto
