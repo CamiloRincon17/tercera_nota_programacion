@@ -1,4 +1,4 @@
-package WeekFive.Carros;
+package weekFive.Carros;
 
 public class Car {
     public String brand;

@@ -1,4 +1,4 @@
-package Actividades.Ejercicio3Tree;
+package actividades.ejercicio3Tree;
 
 public class Car {
     public String model;

@@ -1,4 +1,4 @@
-package Actividades.Ejercicio4Four;
+package actividades.Ejercicio4Four;
 
 public class Main {
     public static void main(String[] args) {

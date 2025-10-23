@@ -1,4 +1,4 @@
-package Actividades.Ejercicio2Two;
+package actividades.ejercicio2Two;
 class Package{
     public String trackingCode;
     public double weight;

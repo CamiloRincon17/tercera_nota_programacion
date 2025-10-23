@@ -1,4 +1,4 @@
-package Actividades.Ejercicio4Four;
+package actividades.Ejercicio4Four;
 
 import java.util.ArrayList;
 import java.util.HashMap;

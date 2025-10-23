@@ -1,4 +1,4 @@
-package WeekFive.box;
+package weekFive.box;
 
 public class Box {
     int size;

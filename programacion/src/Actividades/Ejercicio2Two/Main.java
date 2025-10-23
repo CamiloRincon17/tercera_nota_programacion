@@ -1,4 +1,4 @@
-package Actividades.Ejercicio2Two;
+package actividades.ejercicio2Two;
 class Main{
     public static void main(String[] args) {
         Package package1 = new Package("1234567890", 10.0);

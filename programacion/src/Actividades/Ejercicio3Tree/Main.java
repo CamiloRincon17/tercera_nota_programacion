@@ -1,4 +1,4 @@
-package Actividades.Ejercicio3Tree;
+package actividades.ejercicio3Tree;
 
 import java.util.ArrayList;
 

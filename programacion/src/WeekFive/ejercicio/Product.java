@@ -1,4 +1,4 @@
-package WeekFive.ejercicio;
+package weekFive.ejercicio;
 public class Product {
     String name;
     double price;

@@ -1,4 +1,4 @@
-package WeekFive.Carros;
+package weekFive.Carros;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,10 +1,10 @@
-package Actividades.Ejercicio1One;
+package actividades.ejercicio1One;
 
 public class Producto{
         public String name;
         public double price;
         public int amount;
-        public producto (String name, double price,int quantity){
+        public Producto (String name, double price,int quantity){
             this.name =name;
             this.price = price;
             this.amount = amount;

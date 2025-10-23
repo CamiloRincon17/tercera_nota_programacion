@@ -1,4 +1,4 @@
-package WeekFive;
+package weekFive;
 public class Calculator{
     
     public int sumar(int numA, int numB){
