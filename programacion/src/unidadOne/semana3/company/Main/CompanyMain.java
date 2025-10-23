@@ -1,5 +1,5 @@
-package semana3.company.Main;
-import semana3.company.hr.Employee;
+package unidadOne.semana3.company.Main;
+import unidadOne.semana3.company.hr.Employee;
 
 public class CompanyMain {
     public static void main(String[] args) {

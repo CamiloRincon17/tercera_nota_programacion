@@ -1,4 +1,4 @@
-package weekunknown.clase;
+package unidad2.clase;
 
 public class Student {
     public String name;

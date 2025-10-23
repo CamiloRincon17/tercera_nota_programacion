@@ -1,10 +1,7 @@
-package weekunknown;
+package unidad2.clase;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import weekunknown.clase.Student;
-import weekunknown.clase.Employee;
 
 public class App {
     public static void main(String[] args) {
@@ -21,6 +18,6 @@ public class App {
     }
 
     Employee Roles = new Employee("Manager");
-    System.out.println(Roles.showRespinsabilites);
+    Roles.showRespinsabilites();
 }
 }

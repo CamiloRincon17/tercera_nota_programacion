@@ -1,4 +1,4 @@
-package semanaDos;
+package unidadOne.semanaDos;
 public class SmallStore {
     public static void main(String[] args) {
         producto product1 = new producto("Buso",50,30);

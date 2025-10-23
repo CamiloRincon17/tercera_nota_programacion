@@ -1,4 +1,4 @@
-package semanaDos;
+package unidadOne.semanaDos;
 
 public class producto{
         public String name;
