@@ -2,9 +2,9 @@ package unidadTres.laMiga.domain;
 
 public enum Producto {
     // Cada producto ahora solo tiene su nombre y precio unitario.
-    BAGUETTE("Baguette", 20.0),
-    CROISSANT("Croissant", 15.0),
-    PAN_CHOCOLATE("Pan de Chocolate", 10.0);
+    BAGUETTE("Baguette", 6000.0),
+    CROISSANT("Croissant", 4500.0),
+    PAN_CHOCOLATE("Pan de Chocolate", 5500.0);
 
     // Los campos de un enum deben ser 'final' para asegurar que no cambien.
     private final String nombre;
@@ -25,13 +25,5 @@ public enum Producto {
     public double getPrecio() {
         return precio;
     }
-
-  
-
-   
-
-    
-
-  
 
 }

@@ -1,5 +1,6 @@
 package unidadTres.laMiga.domain;
 
-public class EstadoPedido {
-    
+public enum EstadoPedido {
+    PENDIENTE,
+    CONFIRMADO
 }
